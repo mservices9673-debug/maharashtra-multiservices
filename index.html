@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123b8a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maharashtra MultiServices | Online Government & Digital Services">
+  <meta property="og:description" content="Online forms, certificates, government schemes and digital services at Patel Complex, Sillod Road, Old Court, Phulambri.">
+  <!-- Replace with an absolute HTTPS image URL after the final domain is known. -->
+  <meta property="og:image" content="images/logo.png">
+  <meta name="twitter:image" content="images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maharashtra MultiServices">
+  <meta name="twitter:description" content="Government and digital services in Phulambri">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <title>महाराष्ट्र मल्टीसर्व्हिसेस | Maharashtra MultiServices</title>
+  <meta name="description" content="महाराष्ट्र शासकीय व डिजिटल सेवा - PAN Card, Aadhaar, Certificates, Online Forms | Government Services by Awez Khan">
+  <meta name="keywords" content="seva kendra, online seva, government services, maharashtra, pan card, aadhaar, certificates, digital services, आवेज खान, सेवा केंद्र, फुलंब्री">
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Mukta', sans-serif;
+      background: #fff;
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    
+    /* Header */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      z-index: 1000;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1a56db;
+    }
+    nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+    }
+    nav a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #333;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #1a56db; }
+    .lang-btn {
+      background: #eef2ff;
+      color: #1a56db;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #1a56db;
+    }
+
+    /* Hero */
+    .hero {
+      margin-top: 64px;
+      background: linear-gradient(135deg, #1a56db 0%, #1e40af 100%);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 90px;
+    }
+    .hero-icon {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 2rem;
+    }
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .hero .subtitle {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #f97316;
+      color: #fff;
+      padding: 10px 28px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+    .hero-desc {
+      font-size: 1rem;
+      opacity: 0.85;
+      margin-bottom: 32px;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-white {
+      background: #fff;
+      color: #1a56db;
+      padding: 12px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.6);
+      padding: 10px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+    /* Sections */
+    section {
+      padding: 70px 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1a1a2e;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #1a56db;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+    .section-desc {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 1.05rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .about-text p {
+      color: #444;
+      font-size: 1.05rem;
+      margin-bottom: 20px;
+    }
+    .about-checks {
+      list-style: none;
+    }
+    .about-checks li {
+      padding: 8px 0;
+      font-weight: 500;
+      color: #1a56db;
+    }
+    .about-checks li::before {
+      content: '✓ ';
+      font-weight: 700;
+    }
+    .about-image {
+      background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+      border-radius: 16px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      perspective: 800px;
+    }
+    .about-image img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      animation: spinY 4s linear infinite;
+    }
+    @keyframes spinY {
+      from { transform: rotateY(0deg); }
+      to   { transform: rotateY(360deg); }
+    }
+    .owner-section {
+      margin-top: 48px;
+      background: linear-gradient(135deg, #f0f7ff 0%, #e8f0fe 100%);
+      border-radius: 20px;
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(26,86,219,0.08);
+    }
+    .owner-photo-wrap {
+      width: 228px;
+      height: 228px;
+      border-radius: 50%;
+      padding: 4px;
+      margin: 0 auto 20px auto;
+      background: linear-gradient(135deg, #60a5fa, #1a56db, #93c5fd, #1e40af, #60a5fa);
+      background-size: 300% 300%;
+      animation: glowRotate 3s linear infinite;
+      box-shadow: 0 0 20px rgba(26,86,219,0.45), 0 0 40px rgba(96,165,250,0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .owner-photo {
+      width: 212px;
+      height: 212px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid #fff;
+      display: block;
+      background: #e2e8f0;
+    }
+    @keyframes glowRotate {
+      0% { background-position: 0% 50%; box-shadow: 0 0 18px rgba(26,86,219,0.5), 0 0 36px rgba(96,165,250,0.3); }
+      50% { background-position: 100% 50%; box-shadow: 0 0 28px rgba(37,99,235,0.7), 0 0 55px rgba(147,197,253,0.45); }
+      100% { background-position: 0% 50%; box-shadow: 0 0 18px rgba(26,86,219,0.5), 0 0 36px rgba(96,165,250,0.3); }
+    }
+    .owner-info {
+      max-width: 640px;
+      text-align: center;
+    }
+    .owner-info h3 {
+      font-size: 1.5rem;
+      color: #1a56db;
+      margin-bottom: 4px;
+    }
+    .owner-info .role {
+      font-size: 0.95rem;
+      color: #64748b;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .owner-info p {
+      color: #334155;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+    .owner-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+      justify-content: center;
+    }
+    .owner-badges span {
+      background: #1a56db;
+      color: #fff;
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    @media (max-width: 600px) {
+      .owner-section { padding: 28px 20px; }
+      .owner-photo-wrap { width: 188px; height: 188px; }
+      .owner-photo { width: 172px; height: 172px; }
+    }
+
+    /* Services */
+    .services-bg { background: #f8fafc; }
+    .service-category {
+      margin-bottom: 40px;
+    }
+    .category-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #1a56db;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .service-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      border: 1px solid #e5e7eb;
+      cursor: pointer;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .service-card:hover, .service-card.active {
+      box-shadow: 0 4px 16px rgba(26,86,219,0.12);
+      border-color: #93c5fd;
+    }
+    .service-card .icon {
+      width: 48px; height: 48px;
+      background: #eff6ff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+      color: #1a56db;
+    }
+    .service-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .service-card .docs-toggle {
+      font-size: 0.85rem;
+      color: #1a56db;
+      font-weight: 500;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .service-card .docs-list {
+      display: none;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #e5e7eb;
+    }
+    .service-card.active .docs-list {
+      display: block;
+    }
+    .service-card .docs-list ul {
+      list-style: none;
+      padding: 0;
+    }
+    .service-card .docs-list li {
+      font-size: 0.9rem;
+      color: #444;
+      padding: 4px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+    .service-card .docs-list li::before {
+      content: '•';
+      position: absolute;
+      left: 4px;
+      color: #1a56db;
+      font-weight: 700;
+    }
+    .docs-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #1a56db;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    /* Why Us */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .why-card {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 28px 24px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .why-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    .why-card .icon {
+      width: 56px; height: 56px;
+      background: #eff6ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 1.5rem;
+      color: #1a56db;
+    }
+    .why-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .why-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* Contact */
+    .contact-bg { background: #f8fafc; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+    .contact-info h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1a56db;
+    }
+    .info-item {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 18px;
+      align-items: flex-start;
+    }
+    .info-item .icon {
+      width: 40px; height: 40px;
+      background: #eff6ff;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: #1a56db;
+      flex-shrink: 0;
+    }
+    .info-item .label {
+      font-size: 0.85rem;
+      color: #888;
+    }
+    .info-item .value {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .contact-btns {
+      display: flex;
+      gap: 12px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: #1a56db;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #1e40af; }
+    .btn-whatsapp {
+      background: #25d366;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .btn-whatsapp:hover { background: #1da851; }
+
+    .contact-form {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .contact-form h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #444;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #1a56db;
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+
+    /* Gallery Slider */
+    .gallery-section {
+      padding: 60px 20px;
+      background: #fff;
+    }
+    .slider-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+    .slider-track {
+      display: flex;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .slide {
+      min-width: 100%;
+      position: relative;
+    }
+    .slide img {
+      width: 100%;
+      height: 420px;
+      object-fit: contain;
+      background: #f1f5f9;
+      display: block;
+    }
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 16px 0;
+      background: #f8fafc;
+    }
+    .slider-dots button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      background: #cbd5e1;
+      cursor: pointer;
+      transition: all 0.3s;
+      padding: 0;
+    }
+    .slider-dots button.active {
+      background: #1a56db;
+      transform: scale(1.3);
+    }
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.9);
+      border: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      color: #1a56db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slider-btn:hover { background: #fff; }
+    .slider-prev { left: 12px; }
+    .slider-next { right: 12px; }
+    @media (max-width: 600px) {
+      .slide img { height: 240px; }
+    }
+
+    /* Footer */
+    footer {
+      background: #1e293b;
+      color: #cbd5e1;
+      padding: 50px 20px 24px;
+    }
+    .footer-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 32px;
+    }
+    .footer-brand h3 {
+      color: #fff;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    .footer-brand p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 14px;
+    }
+    .footer-col p, .footer-col a {
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 6px;
+      color: #94a3b8;
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      border-top: 1px solid #334155;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    /* Floating buttons */
+    .float-btns {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 9999;
+    }
+    .float-btn {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.2s;
+    }
+    .float-btn:hover { transform: scale(1.08); }
+    .float-wa { background: #25d366; }
+    .float-call { background: #1a56db; }
+
+    /* Professional polish */
+    html { scroll-behavior: smooth; scroll-padding-top: 78px; }
+    body { background: #fbfdff; }
+    header { border-bottom: 1px solid #e7edf8; backdrop-filter: blur(12px); }
+    .logo { display:flex; align-items:center; gap:10px; }
+    .logo img { width:44px; height:44px; object-fit:contain; border-radius:50%; background:#fff; }
+    .hero { position:relative; overflow:hidden; background: radial-gradient(circle at 15% 15%, rgba(255,255,255,.18), transparent 30%), linear-gradient(135deg,#123b8a 0%,#1a56db 55%,#0f2f72 100%); }
+    .hero-icon { background:#fff; box-shadow:0 10px 35px rgba(0,0,0,.15); }
+    .hero-icon img { width:72px; height:72px; object-fit:contain; border-radius:50%; }
+    .hero h1 { letter-spacing:-.4px; }
+    .btn-white,.btn-outline,.btn-primary,.btn-whatsapp,.service-card { transition: transform .22s ease, box-shadow .22s ease, background .22s ease; }
+    .service-card:hover { transform: translateY(-4px); box-shadow:0 14px 32px rgba(20,55,120,.12); }
+    section { scroll-margin-top: 70px; }
+    .news-section { background:#f0f5ff; }
+    .news-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:18px; }
+    .news-card { background:#fff; border:1px solid #e0e8f8; border-radius:16px; padding:22px; box-shadow:0 8px 24px rgba(18,59,138,.06); display:flex; flex-direction:column; gap:10px; }
+    .news-card h3 { color:#123b8a; font-size:1.15rem; }
+    .news-card p { color:#536078; }
+    .news-pill { align-self:flex-start; border-radius:999px; padding:4px 10px; background:#e5edff; color:#1645a0; font-size:.82rem; font-weight:700; }
+    .news-card a { display:inline-flex; align-self:flex-start; margin-top:4px; background:#123b8a; color:white; padding:9px 14px; border-radius:9px; font-weight:600; }
+    .admin-launch { position:fixed; left:16px; bottom:140px; z-index:9999; border:0; border-radius:999px; background:#172554; color:#fff; padding:12px 18px; box-shadow:0 8px 25px #0f172a33; cursor:pointer; font:600 13px 'Mukta',sans-serif; white-space:nowrap; }
+    /* New feature sections */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 40px 0 10px;
+    }
+    .stat-card {
+      background: linear-gradient(135deg, #1a56db, #123b8a);
+      color: #fff;
+      border-radius: 16px;
+      padding: 22px 16px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(26,86,219,0.25);
+    }
+    .stat-card .num { font-size: 1.8rem; font-weight: 700; }
+    .stat-card .lbl { font-size: 0.9rem; opacity: 0.9; margin-top: 4px; }
+    .pricing-grid, .faq-list, .testimonial-grid, .steps-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .pricing-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+    .price-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .price-card h4 { color: #1a56db; margin-bottom: 6px; font-size: 1rem; }
+    .price-card .fee { font-size: 1.35rem; font-weight: 700; color: #0f172a; }
+    .price-card .note { font-size: 0.8rem; color: #64748b; margin-top: 4px; }
+    .steps-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .step-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+      position: relative;
+    }
+    .step-num {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: #1a56db;
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700;
+      margin: 0 auto 12px;
+    }
+    .faq-item {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      text-align: left;
+      padding: 14px 18px;
+      background: #f8fafc;
+      border: 0;
+      font: 600 1rem 'Mukta', sans-serif;
+      cursor: pointer;
+      color: #1a1a2e;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .faq-a {
+      display: none;
+      padding: 14px 18px;
+      color: #475569;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .faq-item.open .faq-a { display: block; }
+    .testimonial-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .testi-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .testi-card .stars { color: #f59e0b; margin-bottom: 8px; }
+    .testi-card .name { font-weight: 600; color: #1a56db; margin-top: 10px; font-size: 0.9rem; }
+    .hours-banner {
+      background: linear-gradient(90deg, #123b8a, #1a56db);
+      color: #fff;
+      border-radius: 14px;
+      padding: 16px 22px;
+      text-align: center;
+      font-weight: 600;
+      margin: 20px 0;
+      font-size: 1.05rem;
+    }
+    .wa-mini {
+      display: inline-block;
+      margin-top: 10px;
+      background: #25d366;
+      color: #fff !important;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .wa-mini:hover { background: #1da851; }
+    .dark-toggle {
+      border: 0;
+      background: #e8eefb;
+      color: #123b8a;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font: 600 12px 'Mukta',sans-serif;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+    body.dark {
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    body.dark header { background: #1e293b; }
+    body.dark .logo { color: #93c5fd; }
+    body.dark nav a { color: #cbd5e1; }
+    body.dark .services-bg, body.dark .contact-bg, body.dark .gallery-section { background: #1e293b; }
+    body.dark .service-card, body.dark .price-card, body.dark .step-card, body.dark .faq-item, body.dark .testi-card, body.dark .why-card, body.dark .contact-form, body.dark .owner-section {
+      background: #334155;
+      border-color: #475569;
+      color: #e2e8f0;
+    }
+    body.dark .section-title { color: #f1f5f9; }
+    body.dark .faq-q { background: #475569; color: #f1f5f9; }
+    body.dark footer { background: #020617; }
+    @media (max-width: 700px) {
+      .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    }
+    .admin-panel { display:none; position:fixed; z-index:2000; inset:0; background:#0f172acc; padding:18px; overflow:auto; }
+    .admin-panel.open { display:flex; align-items:flex-start; justify-content:center; }
+    .admin-box { background:white; width:min(720px,100%); margin:25px auto; padding:24px; border-radius:18px; box-shadow:0 20px 70px #0004; }
+    .admin-box h2 { color:#123b8a; margin-bottom:8px; }
+    .admin-box label { display:block; font-weight:600; margin:12px 0 5px; }
+    .admin-box input,.admin-box textarea,.admin-box select { width:100%; padding:11px 12px; border:1px solid #cbd5e1; border-radius:9px; font:inherit; }
+    .admin-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
+    .admin-actions button { border:0; border-radius:9px; padding:10px 15px; cursor:pointer; font:600 14px 'Mukta',sans-serif; background:#123b8a; color:#fff; }
+    .admin-actions .secondary { background:#e8eefb; color:#123b8a; }
+    .admin-note { background:#fff7df; border:1px solid #f1d58a; padding:12px; border-radius:10px; color:#704d00; font-size:.92rem; margin:12px 0; }
+    .reveal { animation: revealUp .7s both; }
+    @keyframes revealUp { from { opacity:0; transform:translateY(12px) } to { opacity:1; transform:translateY(0) } }
+    @media (prefers-reduced-motion: reduce) { html {scroll-behavior:auto} *,*::before,*::after {animation-duration:.01ms!important;transition-duration:.01ms!important} }
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav { display: none; }
+      nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px; left: 0; right: 0;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        gap: 16px;
+      }
+      .menu-toggle { display: block; }
+      .logo { font-size:1rem; }
+      .logo img { width:36px;height:36px; }
+      .admin-launch { bottom:140px; left:10px; font-size:12px; padding:10px 14px; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero .subtitle { font-size: 1.1rem; }
+      .about-grid, .contact-grid, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-image { height: 200px; }
+      section { padding: 50px 16px; }
+    }
+
+    /* Lang toggle content — only Marathi & English */
+    [data-en], [data-hi] { display: none !important; }
+    body.en [data-mr] { display: none !important; }
+    body.en [data-en] { display: inline !important; }
+    body.en [data-hi] { display: none !important; }
+    body:not(.en) [data-hi] { display: none !important; }
+    body.en .section-title[data-en],
+    body.en .section-desc[data-en],
+    body.en h3[data-en],
+    body.en p[data-en],
+    body.en li[data-en],
+    body.en span[data-en],
+    body.en a[data-en],
+    body.en label[data-en],
+    body.en .docs-label[data-en],
+    body.en .docs-toggle[data-en],
+    body.en div[data-en] { display: block !important; }
+    body.en .section-title[data-mr],
+    body.en .section-desc[data-mr],
+    body.en h3[data-mr],
+    body.en p[data-mr],
+    body.en li[data-mr],
+    body.en span[data-mr],
+    body.en a[data-mr],
+    body.en label[data-mr],
+    body.en .docs-label[data-mr],
+    body.en .docs-toggle[data-mr],
+    body.en div[data-mr] { display: none !important; }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#home" aria-label="Maharashtra MultiServices home"><img src="images/logo.png" alt="Maharashtra MultiServices logo"><span>महाराष्ट्र मल्टीसर्व्हिसेस</span></a>
+    <nav id="nav">
+      <a href="#home" data-mr>मुख्यपृष्ठ</a><a href="#home" data-en>Home</a>
+      <a href="#about" data-mr>आमच्याबद्दल</a><a href="#about" data-en>About</a>
+      <a href="#gallery" data-mr>गॅलरी</a><a href="#gallery" data-en>Gallery</a>
+      <a href="#services" data-mr>सेवा</a><a href="#services" data-en>Services</a>
+      <a href="#updates" data-mr>भरती/योजना</a><a href="#updates" data-en>Updates</a><a href="#updates" data-hi>अपडेट</a>
+      <a href="#why" data-mr>आम्हाला का निवडावे</a><a href="#why" data-en>Why Us</a>
+      <a href="#contact" data-mr>संपर्क</a><a href="#contact" data-en>Contact</a>
+      <button class="lang-btn" onclick="toggleLang()" id="langBtn" aria-label="Change language">English</button>
+      <button class="dark-toggle" type="button" onclick="toggleDark()" id="darkBtn" aria-label="Dark mode">🌙</button>
+    </nav>
+    <button class="menu-toggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-icon"><img src="images/logo.png" alt="Maharashtra MultiServices logo"></div>
+  <h1 data-mr>महाराष्ट्र मल्टीसर्व्हिसेस</h1>
+  <h1 data-en>Maharashtra MultiServices</h1>
+  <div class="subtitle" data-mr>सुविधा केंद्र</div>
+  <div class="subtitle" data-en>Service Centre</div>
+  <div class="subtitle" data-hi>सेवा केंद्र</div>
+  <div class="hero-badge" data-mr>सर्व शासकीय व डिजिटल सेवा एकाच ठिकाणी</div>
+  <div class="hero-badge" data-en>All Government & Digital Services at One Place</div>
+  <div class="hero-badge" data-hi>सभी सरकारी और डिजिटल सेवाएँ एक ही जगह</div>
+  <p class="hero-desc" data-mr>महाराष्ट्र शासकीय योजना आणि डिजिटल सेवा | Government Approved Services</p>
+  <p class="hero-desc" data-en>Maharashtra Government Schemes & Digital Services</p>
+  <p class="hero-desc" data-hi>महाराष्ट्र सरकारी योजनाएँ और डिजिटल सेवाएँ</p>
+  <div class="hero-btns">
+    <a href="#services" class="btn-white" data-mr>आमच्या सेवा →</a>
+    <a href="#services" class="btn-white" data-en>Our Services →</a>
+    <a href="#contact" class="btn-outline" data-mr>संपर्क करा →</a>
+    <a href="#contact" class="btn-outline" data-en>Contact Us →</a>
+  </div>
+</section>
+
+<!-- Photo Gallery Slider -->
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <h2 class="section-title" data-mr>आमचे कार्यालय व सेवा</h2>
+    <h2 class="section-title" data-en>Our Office & Services</h2>
+    <p class="section-desc" data-mr>फोटो गॅलरी — स्वयंचलित स्लाइड</p>
+    <p class="section-desc" data-en>Photo Gallery — Auto Sliding</p>
+    <div class="slider-container">
+      <button class="slider-btn slider-prev" onclick="changeSlide(-1)">‹</button>
+      <button class="slider-btn slider-next" onclick="changeSlide(1)">›</button>
+      <div class="slider-track" id="sliderTrack">
+        <div class="slide"><img src="images/shop-exterior.jpg" alt="Shop Exterior"></div>
+        <div class="slide"><img src="images/csc-banner.png" alt="CSC Banner"></div>
+        <div class="slide"><img src="images/billboard.png" alt="Billboard"></div>
+        <div class="slide"><img src="images/circular-logo.png" alt="Maharashtra MultiServices"></div>
+        <div class="slide"><img src="images/aadhaar.webp" alt="Aadhaar Card"></div>
+        <div class="slide"><img src="images/pan.png" alt="PAN Card"></div>
+        <div class="slide"><img src="images/voterid.jpg" alt="Voter ID"></div>
+        <div class="slide"><img src="images/ayushman.jpg" alt="Ayushman Bharat Card"></div>
+        <div class="slide"><img src="images/abha.jpg" alt="ABHA Card"></div>
+        <div class="slide"><img src="images/food-license.jpg" alt="Food License"></div>
+        <div class="slide"><img src="images/shop-act.png" alt="Shop Act License"></div>
+        <div class="slide"><img src="images/gazette.jpg" alt="Gazette"></div>
+        <div class="slide"><img src="images/railway.jpg" alt="Railway Ticket"></div>
+        <div class="slide"><img src="images/bus.jpg" alt="Bus Ticket Booking"></div>
+        <div class="slide"><img src="images/marksheet.png" alt="E-Marksheet"></div>
+        <div class="slide"><img src="images/ration-kyc.jpg" alt="Ration Card KYC"></div>
+        <div class="slide"><img src="images/kamgar.jpg" alt="Kamgar Services"></div>
+        <div class="slide"><img src="images/aadhaar-pan-link.jpg" alt="Aadhaar PAN Link"></div>
+        <div class="slide"><img src="images/gst.jpg" alt="GST Registration"></div>
+        <div class="slide"><img src="images/frame_02.jpg" alt="Office Interior"></div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title" data-mr>आमच्याबद्दल</h2>
+    <h2 class="section-title" data-en>About Us</h2>
+    <div class="about-grid" style="margin-top:40px">
+      <div class="about-text">
+        <p data-mr>महाराष्ट्र मल्टीसर्व्हिसेस हे महाराष्ट्र शासनाच्या विविध योजना आणि डिजिटल सेवा प्रदान करणारे एक विश्वासार्ह आणि प्रामाणिक सेवा केंद्र आहे. आम्ही नागरिकांना जलद, सुरक्षित आणि पारदर्शक सेवा देण्यासाठी वचनबद्ध आहोत.</p>
+        <p data-en>Maharashtra MultiServices is a trusted and honest service centre providing various Maharashtra Government schemes and digital services. We are committed to delivering fast, secure and transparent services to citizens.</p>
+        <ul class="about-checks">
+          <li data-mr>✓ सर्व शासकीय व डिजिटल सेवा</li>
+          <li data-en>✓ All Government & Digital Services</li>
+          <li data-mr>✓ विश्वासार्ह व पारदर्शक | Trusted & Transparent</li>
+          <li data-en>✓ Trusted & Transparent</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="images/logo.png" alt="Maharashtra MultiServices Logo">
+      </div>
+    </div>
+
+    <!-- Owner Profile -->
+    <div class="owner-section">
+      <div class="owner-photo-wrap">
+        <img src="images/owner.jpg" alt="Awez Khan - Proprietor" class="owner-photo">
+      </div>
+      <div class="owner-info">
+        <h3>आवेज खान / Awez Khan</h3>
+        <div class="role" data-mr>मालक व संचालक | Proprietor & Director</div>
+        <div class="role" data-en>Proprietor & Director</div>
+        <p data-mr>
+          आवेज खान हे महाराष्ट्र मल्टीसर्व्हिसेसचे संस्थापक आहेत. फुलंब्री, औरंगाबाद येथे नागरिकांना जलद, पारदर्शक आणि विश्वासार्ह शासकीय व डिजिटल सेवा पुरवण्यासाठी ते समर्पित आहेत. CSC केंद्राद्वारे PAN, आधार, पासपोर्ट, शॉप ॲक्ट, MSME आणि इतर अनेक सेवा एकाच छताखाली उपलब्ध करून देणे हा त्यांचा उद्देश आहे.
+        </p>
+        <p data-en>
+          Awez Khan is the founder of Maharashtra MultiServices. Based in Phulambri, Aurangabad, he is dedicated to providing fast, transparent and reliable government and digital services to citizens. Through the CSC centre, services like PAN, Aadhaar, Passport, Shop Act, MSME and many more are available under one roof.
+        </p>
+        <div class="owner-badges">
+          <span>CSC Centre</span>
+          <span>Digital India</span>
+          <span data-mr>विश्वासार्ह सेवा</span>
+          <span data-en>Trusted Service</span>
+          <span>Phulambri</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services-bg" id="services">
+  <div class="container">
+    <h2 class="section-title" data-mr>आमच्या सेवा</h2>
+    <h2 class="section-title" data-en>Our Services</h2>
+    <p class="section-desc" data-mr>सर्व शासकीय व डिजिटल सेवा उपलब्ध — क्लिक करा आवश्यक कागदपत्रे पाहण्यासाठी</p>
+    <p class="section-desc" data-en>All Government & Digital Services Available — Click to see required documents</p>
+    <div id="siteNotice" style="display:none;background:#fef3c7;border:1px solid #f59e0b;color:#92400e;padding:12px 16px;border-radius:10px;text-align:center;margin:12px 0;font-weight:600"></div>
+    <div style="max-width:420px;margin:16px auto 8px">
+      <input id="serviceSearch" type="search" placeholder="सेवा शोधा / Search service..." style="width:100%;padding:12px 16px;border:1px solid #cbd5e1;border-radius:10px;font:inherit" oninput="filterServices(this.value)">
+    </div>
+
+    <!-- सुविधा -->
+    <div class="service-category">
+      <div class="category-title">📄 <span data-mr>सुविधा</span><span data-en>Facilities</span></div>
+      <div class="services-grid">
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🚗</div>
+          <h3 data-mr>ड्रायव्हिंग लायसन्स</h3><h3 data-en>Driving License</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>जन्मतारीख पुरावा</li><li data-en>Date of Birth Proof</li>
+              <li data-mr>पत्ता पुरावा</li><li data-en>Address Proof</li>
+              <li data-mr>पासपोर्ट साइज फोटो</li><li data-en>Passport Size Photo</li>
+              <li data-mr>मेडिकल सर्टिफिकेट (आवश्यक असल्यास)</li><li data-en>Medical Certificate (if required)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🍽️</div>
+          <h3 data-mr>फूड लायसन्स</h3><h3 data-en>Food License (FSSAI)</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार / पॅन कार्ड</li><li data-en>Aadhaar / PAN Card</li>
+              <li data-mr>पत्ता पुरावा (रेंट अग्रीमेंट / वीज बिल)</li><li data-en>Address Proof (Rent Agreement / Electricity Bill)</li>
+              <li data-mr>पासपोर्ट साइज फोटो</li><li data-en>Passport Size Photo</li>
+              <li data-mr>ईमेल आयडी</li><li data-en>Email ID</li>
+              <li data-mr>प्रॉडक्ट लिस्ट</li><li data-en>Product List</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">📜</div>
+          <h3 data-mr>राजपत्र</h3><h3 data-en>Gazette</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>फोटो</li><li data-en>Photo</li>
+              <li data-mr>जन्मतारीख पुरावा</li><li data-en>Date of Birth Proof</li>
+              <li data-mr>अॅफिडेविट बॉन्ड</li><li data-en>Affidavit Bond</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🛂</div>
+          <h3 data-mr>पासपोर्ट</h3><h3 data-en>Passport</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>पॅन कार्ड</li><li data-en>PAN Card</li>
+              <li data-mr>बँक पासबुक</li><li data-en>Bank Passbook</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- शासकीय सेवा -->
+    <div class="service-category">
+      <div class="category-title">🏛️ <span data-mr>शासकीय सेवा</span><span data-en>Government Services</span></div>
+      <div class="services-grid">
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">💳</div>
+          <h3 data-mr>पॅन कार्ड (नवीन / सुधारणा)</h3><h3 data-en>PAN Card (New / Correction)</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>जन्मतारीख पुरावा — जन्म प्रमाणपत्र / मॅट्रिक्युलेशन सर्टिफिकेट / ABHA कार्ड / ड्रायव्हिंग लायसन्स / पासपोर्ट / डोमिसाईल सर्टिफिकेट / मॅरेज सर्टिफिकेट</li>
+              <li data-en>DOB Proof — Birth Certificate / Matriculation Certificate / ABHA Card / Driving License / Passport / Domicile Certificate / Marriage Certificate</li>
+              <li data-mr>पासपोर्ट साइज फोटो</li><li data-en>Passport Size Photo</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">👆</div>
+          <h3 data-mr>आधार सेवा</h3><h3 data-en>Aadhaar Services</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>विद्यमान आधार कार्ड</li><li data-en>Existing Aadhaar Card</li>
+              <li data-mr>संबंधित पुरावा (नाव / पत्ता / जन्मतारीख बदलण्यासाठी)</li><li data-en>Relevant Proof (for Name / Address / DOB change)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🗳️</div>
+          <h3 data-mr>मतदार ओळखपत्र</h3><h3 data-en>Voter ID Card</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>फोटो</li><li data-en>Photo</li>
+              <li data-mr>जन्मतारीख पुरावा</li><li data-en>Date of Birth Proof</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🏦</div>
+          <h3 data-mr>EPFO आधार सीडिंग</h3><h3 data-en>EPFO Aadhaar Seeding</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>पॅन कार्ड</li><li data-en>PAN Card</li>
+              <li data-mr>बँक पासबुक</li><li data-en>Bank Passbook</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🏥</div>
+          <h3 data-mr>आयुष्मान भारत कार्ड</h3><h3 data-en>Ayushman Bharat Card</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>राशन कार्ड</li><li data-en>Ration Card</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">👷</div>
+          <h3 data-mr>ई-श्रम कार्ड</h3><h3 data-en>e-Shram Card</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+              <li data-mr>बँक खाते (ऑप्शनल)</li><li data-en>Bank Account (Optional)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🏭</div>
+          <h3 data-mr>उद्यम नोंदणी (MSME)</h3><h3 data-en>Udyam Registration (MSME)</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>पॅन कार्ड</li><li data-en>PAN Card</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+              <li data-mr>ईमेल आयडी</li><li data-en>Email ID</li>
+              <li data-mr>बँक पासबुक</li><li data-en>Bank Passbook</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🏪</div>
+          <h3 data-mr>शॉप ॲक्ट</h3><h3 data-en>Shop Act License</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार / पॅन कार्ड</li><li data-en>Aadhaar / PAN Card</li>
+              <li data-mr>पत्ता पुरावा</li><li data-en>Address Proof</li>
+              <li data-mr>शॉपचा फोटो</li><li data-en>Shop Photo</li>
+              <li data-mr>रेंट अग्रीमेंट</li><li data-en>Rent Agreement</li>
+              <li data-mr>ईमेल आयडी</li><li data-en>Email ID</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🏗️</div>
+          <h3 data-mr>महाराष्ट्र बांधकाम कामगार कल्याण मंडळ (BOCW)</h3>
+          <h3 data-en>Maharashtra Building & Other Construction Workers Welfare Board</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>बँक पासबुक</li><li data-en>Bank Passbook</li>
+              <li data-mr>पासपोर्ट साइज फोटो</li><li data-en>Passport Size Photo</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+              <li data-mr>रेशन कार्ड (असल्यास)</li><li data-en>Ration Card (if available)</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- डिजिटल सेवा -->
+    <div class="service-category">
+      <div class="category-title">💻 <span data-mr>डिजिटल सेवा</span><span data-en>Digital Services</span></div>
+      <div class="services-grid">
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">📝</div>
+          <h3 data-mr>ऑनलाईन अर्ज भरणे</h3><h3 data-en>Online Form Filling</h3>
+          <div class="docs-toggle"><span data-mr>तपशील ▼</span><span data-en>Details ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>उपलब्ध सेवा</div>
+            <div class="docs-label" data-en>Available Services</div>
+            <ul>
+              <li data-mr>सर्व प्रकारचे ऑनलाईन फॉर्म भरणे</li>
+              <li data-en>All types of online form filling</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">📋</div>
+          <h3 data-mr>शासकीय फॉर्म सबमिशन</h3><h3 data-en>Govt Form Submission</h3>
+          <div class="docs-toggle"><span data-mr>तपशील ▼</span><span data-en>Details ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>उपलब्ध सेवा</div>
+            <div class="docs-label" data-en>Available Services</div>
+            <ul>
+              <li data-mr>सर्व प्रकारचे शासकीय फॉर्म सबमिशन</li>
+              <li data-en>All types of Govt form Submission</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🎓</div>
+          <h3 data-mr>परीक्षा / शिष्यवृत्ती फॉर्म</h3><h3 data-en>Exam / Scholarship Forms</h3>
+          <div class="docs-toggle"><span data-mr>तपशील ▼</span><span data-en>Details ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>उपलब्ध सेवा</div>
+            <div class="docs-label" data-en>Available Services</div>
+            <ul>
+              <li data-mr>सर्व प्रकारचे परीक्षा फॉर्म सबमिट</li>
+              <li data-en>All types Exam form submit</li>
+              <li data-mr>सर्व प्रकारचे शिष्यवृत्ती फॉर्म भरणे</li>
+              <li data-en>All types of Scholarship form filling</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">💰</div>
+          <h3 data-mr>ऑनलाईन पेमेंट</h3><h3 data-en>Online Payments</h3>
+          <div class="docs-toggle"><span data-mr>तपशील ▼</span><span data-en>Details ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>उपलब्ध सेवा</div>
+            <div class="docs-label" data-en>Available Services</div>
+            <ul>
+              <li data-mr>राष्ट्रीयकृत बँक पेमेंट / विद्ड्रॉवल</li>
+              <li data-en>Nationalised Bank payment / withdrawal</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🖨️</div>
+          <h3 data-mr>प्रिंट, स्कॅन व झेरॉक्स</h3><h3 data-en>Print, Scan & Xerox</h3>
+          <div class="docs-toggle"><span data-mr>तपशील ▼</span><span data-en>Details ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>उपलब्ध सेवा</div>
+            <div class="docs-label" data-en>Available Services</div>
+            <ul>
+              <li data-mr>ब्लॅक & व्हाईट झेरॉक्स</li>
+              <li data-en>Black & White Xerox</li>
+              <li data-mr>कलर झेरॉक्स</li>
+              <li data-en>Color Xerox</li>
+              <li data-mr>लॅमिनेशन</li>
+              <li data-en>Lamination</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">📷</div>
+          <h3 data-mr>पासपोर्ट फोटो</h3><h3 data-en>Passport Photo</h3>
+          <div class="docs-toggle"><span data-mr>तपशील ▼</span><span data-en>Details ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>उपलब्ध पर्याय</div>
+            <div class="docs-label" data-en>Available Options</div>
+            <ul>
+              <li data-mr>८ फोटो</li><li data-en>8 Photos</li>
+              <li data-mr>१० फोटो</li><li data-en>10 Photos</li>
+              <li data-mr>१२ फोटो</li><li data-en>12 Photos</li>
+              <li data-mr>१५ फोटो</li><li data-en>15 Photos</li>
+            </ul>
+          </div>
+          <a class="wa-mini" href="https://wa.me/918669083431?text=Passport%20Photo%20service%20havi%20aahe" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra financial / bank services -->
+    <div class="service-category">
+      <div class="category-title">📊 <span data-mr>कर, बँक व इतर सेवा</span><span data-en>Tax, Bank & Other Services</span></div>
+      <div class="services-grid">
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🧾</div>
+          <h3 data-mr>आयकर रिटर्न (ITR)</h3><h3 data-en>Income Tax Return (ITR)</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>पॅन कार्ड</li><li data-en>PAN Card</li>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>फॉर्म १६ / उत्पन्न पुरावा</li><li data-en>Form 16 / Income Proof</li>
+              <li data-mr>बँक स्टेटमेंट</li><li data-en>Bank Statement</li>
+            </ul>
+          </div>
+          <a class="wa-mini" href="https://wa.me/918669083431?text=ITR%20filing%20havi%20aahe" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">📑</div>
+          <h3 data-mr>GST रिटर्न / नोंदणी</h3><h3 data-en>GST Return / Registration</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>पॅन / आधार</li><li data-en>PAN / Aadhaar</li>
+              <li data-mr>व्यवसाय पत्ता पुरावा</li><li data-en>Business Address Proof</li>
+              <li data-mr>बँक पासबुक</li><li data-en>Bank Passbook</li>
+              <li data-mr>ईमेल / मोबाईल</li><li data-en>Email / Mobile</li>
+            </ul>
+          </div>
+          <a class="wa-mini" href="https://wa.me/918669083431?text=GST%20service%20havi%20aahe" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🏦</div>
+          <h3 data-mr>PF विद्ड्रॉवल</h3><h3 data-en>PF Withdrawal</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>UAN / PF नंबर</li><li data-en>UAN / PF Number</li>
+              <li data-mr>आधार + पॅन</li><li data-en>Aadhaar + PAN</li>
+              <li data-mr>बँक पासबुक</li><li data-en>Bank Passbook</li>
+            </ul>
+          </div>
+          <a class="wa-mini" href="https://wa.me/918669083431?text=PF%20Withdrawal%20havi%20aahe" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">🚗</div>
+          <h3 data-mr>मोटर इन्शुरन्स / RC</h3><h3 data-en>Motor Insurance / RC</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>RC बुक</li><li data-en>RC Book</li>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>मागील पॉलिसी (असल्यास)</li><li data-en>Previous Policy (if any)</li>
+            </ul>
+          </div>
+          <a class="wa-mini" href="https://wa.me/918669083431?text=Motor%20Insurance%20/%20RC%20service" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a>
+        </div>
+        <div class="service-card" onclick="toggleDocs(this)">
+          <div class="icon">💳</div>
+          <h3 data-mr>बँक खाते / मिनी स्टेटमेंट</h3><h3 data-en>Bank Account / Mini Statement</h3>
+          <div class="docs-toggle"><span data-mr>आवश्यक कागदपत्रे ▼</span><span data-en>Required Documents ▼</span></div>
+          <div class="docs-list">
+            <div class="docs-label" data-mr>आवश्यक कागदपत्रे</div>
+            <div class="docs-label" data-en>Required Documents</div>
+            <ul>
+              <li data-mr>आधार कार्ड</li><li data-en>Aadhaar Card</li>
+              <li data-mr>पॅन कार्ड</li><li data-en>PAN Card</li>
+              <li data-mr>फोटो</li><li data-en>Photo</li>
+              <li data-mr>मोबाईल नंबर</li><li data-en>Mobile Number</li>
+            </ul>
+          </div>
+          <a class="wa-mini" href="https://wa.me/918669083431?text=Bank%20account%20/%20mini%20statement" target="_blank" rel="noopener" onclick="event.stopPropagation()">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Why Us -->
+
+<!-- Recruitment and scheme updates -->
+<section class="news-section" id="updates">
+  <div class="container">
+    <h2 class="section-title" data-mr>भरती व शासकीय योजना अपडेट्स</h2><h2 class="section-title" data-en>Recruitment & Government Scheme Updates</h2><h2 class="section-title" data-hi>भर्ती और सरकारी योजना अपडेट</h2>
+    <p class="section-desc" data-mr>नवीन जाहिराती व योजनांची माहिती येथे पाहा. अर्ज करण्यापूर्वी अधिकृत वेबसाइटवर तपासणी करा.</p><p class="section-desc" data-en>Browse announcements and scheme information. Always verify details on the official website before applying.</p><p class="section-desc" data-hi>नई सूचनाएँ और योजनाएँ देखें। आवेदन से पहले आधिकारिक वेबसाइट पर जानकारी जाँचें।</p>
+    <div class="news-grid" id="newsGrid" aria-live="polite"></div>
+    <p style="text-align:center;color:#1a56db;margin-top:14px;font-size:.9rem;font-weight:600" data-mr>🔄 भरती अपडेट दिवसातून अनेक वेळा आपोआप रिफ्रेश होतात</p>
+    <p style="text-align:center;color:#1a56db;margin-top:14px;font-size:.9rem;font-weight:600" data-en>🔄 Recruitment updates auto-refresh several times daily</p>
+    <p style="text-align:center;color:#64748b;margin-top:10px;font-size:.9rem" data-mr>टीप: अधिकृत सरकारी विभागाशी संबंधित नसलेली स्वतंत्र माहिती येथे जाहिरात म्हणून दाखवली जाऊ शकते. अर्ज करण्यापूर्वी अधिकृत साइट तपासा.</p>
+    <p style="text-align:center;color:#64748b;margin-top:10px;font-size:.9rem" data-en>Note: This is an independent service centre, not a government department. Always verify on the official website before applying.</p>
+    <p style="text-align:center;color:#64748b;margin-top:18px;font-size:.9rem" data-hi>ध्यान दें: यह एक स्वतंत्र सेवा केंद्र है, सरकारी विभाग नहीं।</p>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <h2 class="section-title" data-mr>आम्हाला का निवडावे</h2>
+    <h2 class="section-title" data-en>Why Choose Us</h2>
+    <div class="why-grid" style="margin-top:40px">
+      <div class="why-card">
+        <div class="icon">⚡</div>
+        <h3 data-mr>जलद सेवा</h3><h3 data-en>Fast Service</h3>
+        <p data-mr>वेळेवर आणि जलद सेवा देण्यात आम्ही तज्ञ आहोत</p>
+        <p data-en>We specialize in timely and fast service delivery</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🔒</div>
+        <h3 data-mr>विश्वासार्ह आणि सुरक्षित</h3><h3 data-en>Trusted & Secure</h3>
+        <p data-mr>तुमची माहिती पूर्णपणे सुरक्षित आणि गोपनीय राहते</p>
+        <p data-en>Your information remains completely secure and confidential</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">💰</div>
+        <h3 data-mr>परवडणारे शुल्क</h3><h3 data-en>Affordable Fees</h3>
+        <p data-mr>कमीत कमी शुल्कात सर्व सेवा उपलब्ध</p>
+        <p data-en>All services available at minimal fees</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🗣️</div>
+        <h3 data-mr>स्थानिक समर्थन</h3><h3 data-en>Local Support</h3>
+        <p data-mr>मराठी भाषा आणि स्थानिक मार्गदर्शन उपलब्ध</p>
+        <p data-en>Marathi language and local guidance available</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">👨‍💼</div>
+        <h3 data-mr>अनुभवी कर्मचारी</h3><h3 data-en>Experienced Staff</h3>
+        <p data-mr>तज्ञ आणि अनुभवी कर्मचाऱ्यांकडून सेवा</p>
+        <p data-en>Services by expert and experienced staff</p>
+      </div>
+      <div class="why-card">
+        <div class="icon">🏠</div>
+        <h3 data-mr>सर्व सेवा एकाच ठिकाणी</h3><h3 data-en>All Services Under One Roof</h3>
+        <p data-mr>सर्व शासकीय व डिजिटल सेवा एकाच छताखाली</p>
+        <p data-en>All government and digital services under one roof</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-bar">
+      <div class="stat-card"><div class="num">500+</div><div class="lbl" data-mr>PAN कार्ड</div><div class="lbl" data-en>PAN Cards</div></div>
+      <div class="stat-card"><div class="num">1000+</div><div class="lbl" data-mr>आनंदी ग्राहक</div><div class="lbl" data-en>Happy Customers</div></div>
+      <div class="stat-card"><div class="num">50+</div><div class="lbl" data-mr>सेवा प्रकार</div><div class="lbl" data-en>Service Types</div></div>
+      <div class="stat-card"><div class="num">5+</div><div class="lbl" data-mr>वर्षे अनुभव</div><div class="lbl" data-en>Years Experience</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="services-bg">
+  <div class="container">
+    <h2 class="section-title" data-mr>सेवा शुल्क (अंदाजे)</h2>
+    <h2 class="section-title" data-en>Service Charges (Approx.)</h2>
+    <p class="section-desc" data-mr>अंतिम शुल्क कागदपत्रे व कामानुसार बदलू शकते — WhatsApp वर विचारा</p>
+    <p class="section-desc" data-en>Final fee may vary — ask on WhatsApp</p>
+    <div class="pricing-grid">
+      <div class="price-card" data-rate="pan"><h4>PAN Card</h4><div class="fee">₹<span class="rate-val">200</span></div><div class="note" data-mr>नवीन / सुधारणा</div><div class="note" data-en>New / Correction</div></div>
+      <div class="price-card" data-rate="aadhaar"><h4 data-mr>आधार कार्ड</h4><h4 data-en>Aadhaar Card</h4><div class="fee">₹<span class="rate-val">150</span></div></div>
+      <div class="price-card" data-rate="passportPhoto"><h4>Passport Photo</h4><div class="fee">₹<span class="rate-val">50</span></div><div class="note">8–15 photos</div></div>
+      <div class="price-card" data-rate="colorXerox"><h4 data-mr>कलर झेरॉक्स</h4><h4 data-en>Color Xerox</h4><div class="fee">₹<span class="rate-val">10</span></div></div>
+      <div class="price-card" data-rate="shopAct"><h4 data-mr>शॉप ॲक्ट</h4><h4 data-en>Shop Act</h4><div class="fee">₹<span class="rate-val">300+</span></div></div>
+      <div class="price-card" data-rate="msme"><h4>MSME / Udyam</h4><div class="fee">₹<span class="rate-val">200+</span></div></div>
+      <div class="price-card" data-rate="itr"><h4>ITR Filing</h4><div class="fee">₹<span class="rate-val">500+</span></div></div>
+      <div class="price-card" data-rate="gst"><h4>GST Return</h4><div class="fee">₹<span class="rate-val">400+</span></div></div>
+    </div>
+    <div id="upiBox" style="margin-top:28px;text-align:center;display:none">
+      <h3 style="color:#1a56db" data-mr>UPI पेमेंट</h3>
+      <h3 style="color:#1a56db" data-en>UPI Payment</h3>
+      <p id="upiDisplay" style="font-size:1.2rem;font-weight:700;margin-top:8px"></p>
+      <p style="color:#64748b;font-size:0.9rem" data-mr>पेमेंट के बाद WhatsApp पर स्क्रीनशॉट भेजें</p>
+      <p style="color:#64748b;font-size:0.9rem" data-en>After payment, send screenshot on WhatsApp</p>
+    </div>
+  </div>
+</section>
+
+<!-- Process steps -->
+<section id="process">
+  <div class="container">
+    <h2 class="section-title" data-mr>कसे काम करते</h2>
+    <h2 class="section-title" data-en>How It Works</h2>
+    <div class="steps-grid">
+      <div class="step-card"><div class="step-num">1</div><h3 data-mr>संपर्क करा</h3><h3 data-en>Contact Us</h3><p data-mr>कॉल / WhatsApp करा</p><p data-en>Call or WhatsApp</p></div>
+      <div class="step-card"><div class="step-num">2</div><h3 data-mr>कागदपत्रे द्या</h3><h3 data-en>Submit Documents</h3><p data-mr>आवश्यक डॉक्युमेंट्स आणा किंवा पाठवा</p><p data-en>Bring or send required documents</p></div>
+      <div class="step-card"><div class="step-num">3</div><h3 data-mr>आम्ही प्रक्रिया करतो</h3><h3 data-en>We Process</h3><p data-mr>अर्ज भरणे व सबमिट</p><p data-en>Form filling & submission</p></div>
+      <div class="step-card"><div class="step-num">4</div><h3 data-mr>काम पूर्ण</h3><h3 data-en>Done</h3><p data-mr>अपडेट / प्रिंट मिळवा</p><p data-en>Get update / print</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="services-bg">
+  <div class="container">
+    <h2 class="section-title" data-mr>नेहमी विचारले जाणारे प्रश्न</h2>
+    <h2 class="section-title" data-en>Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span data-mr>कामासाठी किती दिवस लागतात?</span><span data-en>How many days does work take?</span> ▾</button>
+        <div class="faq-a" data-mr>सेवेनुसार १ ते ७ दिवस. PAN, आधार इ. जलद होतात; पासपोर्ट / लायसन्स जास्त वेळ घेऊ शकतात.</div>
+        <div class="faq-a" data-en>Usually 1–7 days depending on service. PAN/Aadhaar are faster; Passport/License may take longer.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span data-mr>शुल्क किती आहे?</span><span data-en>What are the charges?</span> ▾</button>
+        <div class="faq-a" data-mr>वरील शुल्क यादी पाहा. अंतिम रक्कम कागदपत्रे व कामानुसार सांगितली जाते.</div>
+        <div class="faq-a" data-en>See the pricing section above. Final amount depends on documents and work type.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span data-mr>घरून काम होऊ शकते का?</span><span data-en>Can work be done from home?</span> ▾</button>
+        <div class="faq-a" data-mr>काही सेवा WhatsApp वर फोटो पाठवून होतात. बाकीसाठी सेंटरला यावे लागते.</div>
+        <div class="faq-a" data-en>Some services work via WhatsApp photos. Others need a visit to the centre.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')"><span data-mr>रविवारी उघडे आहे का?</span><span data-en>Open on Sunday?</span> ▾</button>
+        <div class="faq-a" data-mr>रविवार बंद. सोम–शनि सकाळी ९:०० ते संध्याकाळी ७:००.</div>
+        <div class="faq-a" data-en>Closed on Sunday. Mon–Sat 9:00 AM to 7:00 PM.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="reviews">
+  <div class="container">
+    <h2 class="section-title" data-mr>ग्राहक अभिप्राय</h2>
+    <h2 class="section-title" data-en>Customer Reviews</h2>
+    <div class="testimonial-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p data-mr>"PAN कार्ड एका दिवसात झाले. खूप छान सेवा!"</p>
+        <p data-en>"PAN card done in one day. Excellent service!"</p>
+        <div class="name">— Rahul, Phulambri</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p data-mr>"शॉप ॲक्ट व MSME दोन्ही इथे केले. मार्गदर्शन चांगले."</p>
+        <p data-en>"Got Shop Act and MSME here. Good guidance."</p>
+        <div class="name">— Suresh, Sillod Road</div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★☆</div>
+        <p data-mr>"पासपोर्ट फोटो आणि फॉर्म भरणे — जलद व स्वस्त."</p>
+        <p data-en>"Passport photos and form filling — fast and affordable."</p>
+        <div class="name">— Priya, Aurangabad</div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px">
+      <a href="https://maps.app.goo.gl/xGK2a43hvq8HCRds5" target="_blank" rel="noopener" class="btn-primary" style="display:inline-block">
+        <span data-mr>⭐ Google वर रिव्ह्यू द्या</span>
+        <span data-en>⭐ Leave a Google Review</span>
+      </a>
+    </p>
+  </div>
+</section>
+
+<!-- Appointment -->
+<section id="appointment" class="services-bg">
+  <div class="container" style="text-align:center">
+    <h2 class="section-title" data-mr>अपॉइंटमेंट बुक करा</h2>
+    <h2 class="section-title" data-en>Book an Appointment</h2>
+    <p class="section-desc" data-mr>वेळ वाचवा — WhatsApp वर तारीख व वेळ सांगा</p>
+    <p class="section-desc" data-en>Save time — share date & time on WhatsApp</p>
+    <div class="hours-banner">
+      <span data-mr>⏰ सोम–शनि: सकाळी ९:०० – संध्या ७:०० | रविवार बंद</span>
+      <span data-en>⏰ Mon–Sat: 9:00 AM – 7:00 PM | Sunday Closed</span>
+    </div>
+    <a href="https://wa.me/918669083431?text=Namaskar%2C%20mala%20appointment%20book%20karaychi%20aahe.%20Tareek%20ani%20vel%3A%20" target="_blank" rel="noopener" class="btn-whatsapp" style="display:inline-block;padding:14px 28px;font-size:1.05rem">
+      <span data-mr>📅 WhatsApp वर अपॉइंटमेंट</span>
+      <span data-en>📅 Book on WhatsApp</span>
+    </a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-bg" id="contact">
+  <div class="container">
+    <h2 class="section-title" data-mr>संपर्क साधा</h2>
+    <h2 class="section-title" data-en>Get in Touch</h2>
+    <p class="section-desc" data-mr>आम्ही तुमच्या सेवेसाठी उपलब्ध आहोत</p>
+    <p class="section-desc" data-en>We are available for your service</p>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3 data-mr>संपर्क माहिती</h3>
+        <h3 data-en>Contact Information</h3>
+        <div class="info-item">
+          <div class="icon">👤</div>
+          <div>
+            <div class="label" data-mr>मालक</div><div class="label" data-en>Owner</div>
+            <div class="value">आवेज खान / Awez Khan</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📱</div>
+          <div>
+            <div class="label" data-mr>मोबाईल</div><div class="label" data-en>Mobile</div>
+            <div class="value">8669083431, 9673797263</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">✉️</div>
+          <div>
+            <div class="label" data-mr>ईमेल</div><div class="label" data-en>Email</div>
+            <div class="value">mservices9673@gmail.com</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📍</div>
+          <div>
+            <div class="label" data-mr>पत्ता</div><div class="label" data-en>Address</div>
+            <div class="value" data-mr>पटेल कॉम्प्लेक्स, सिल्लोड रोड, जुने कोर्ट, फुलंब्री, जिल्हा औरंगाबाद, महाराष्ट्र</div>
+            <div class="value" data-en>Patel Complex, Sillod Road, June Court, Phulambri, Dist. Aurangabad, Maharashtra</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">🕐</div>
+          <div>
+            <div class="label" data-mr>सेवा तास</div><div class="label" data-en>Service Hours</div>
+            <div class="value" data-mr>सोमवार - शनिवार: सकाळी ९:०० - संध्याकाळी ७:००<br>रविवार बंद</div>
+            <div class="value" data-en>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday Closed</div>
+          </div>
+        </div>
+        <div class="contact-btns">
+          <a href="tel:8669083431" class="btn-primary call-btn" data-num="8669083431" data-mr>📞 8669083431</a>
+          <a href="tel:8669083431" class="btn-primary call-btn" data-num="8669083431" data-en>📞 8669083431</a>
+          <a href="tel:9673797263" class="btn-primary call-btn" data-num="9673797263" style="background:#1e40af;" data-mr>📞 9673797263</a>
+          <a href="tel:9673797263" class="btn-primary call-btn" data-num="9673797263" style="background:#1e40af;" data-en>📞 9673797263</a>
+          <a href="https://wa.me/918669083431" target="_blank" rel="noopener" class="btn-whatsapp" data-mr>💬 WhatsApp</a>
+          <a href="https://wa.me/918669083431" target="_blank" rel="noopener" class="btn-whatsapp" data-en>💬 WhatsApp</a>
+        </div>
+        <div style="margin-top:24px; border-radius:14px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.08);">
+          <iframe
+            src="https://maps.google.com/maps?q=MAHARASHTRA+MULTISERVICES+Phulambri&ll=20.0901081,75.4242526&z=17&hl=en&output=embed"
+            width="100%"
+            height="280"
+            style="border:0; display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div style="margin-top:12px;">
+          <a href="https://maps.app.goo.gl/xGK2a43hvq8HCRds5" target="_blank" style="color:#1a56db; font-weight:600; font-size:0.95rem;">
+            <span data-mr>📍 Google Maps वर दिशा मिळवा →</span>
+            <span data-en>📍 Get Directions on Google Maps →</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 data-mr>संपर्क फॉर्म</h3>
+        <h3 data-en>Contact Form</h3>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label data-mr>तुमचे नाव</label><label data-en>Your Name</label>
+            <input type="text" name="name" id="formName" required placeholder="नाव / Name">
+          </div>
+          <div class="form-group">
+            <label data-mr>मोबाईल नंबर</label><label data-en>Mobile Number</label>
+            <input type="tel" name="phone" id="formPhone" required placeholder="10 अंकी नंबर" pattern="[0-9]{10}">
+          </div>
+          <div class="form-group">
+            <label data-mr>आवश्यक सेवा</label><label data-en>Required Service</label>
+            <select name="service" id="formService">
+              <option value="">-- निवडा / Select --</option>
+              <option value="पॅन कार्ड">पॅन कार्ड</option>
+              <option value="आधार सेवा">आधार सेवा</option>
+              <option value="ड्रायव्हिंग लायसन्स">ड्रायव्हिंग लायसन्स</option>
+              <option value="फूड लायसन्स">फूड लायसन्स</option>
+              <option value="पासपोर्ट">पासपोर्ट</option>
+              <option value="राजपत्र">राजपत्र</option>
+              <option value="मतदार ओळखपत्र">मतदार ओळखपत्र</option>
+              <option value="EPFO सीडिंग">EPFO सीडिंग</option>
+              <option value="आयुष्मान भारत">आयुष्मान भारत</option>
+              <option value="ई-श्रम कार्ड">ई-श्रम कार्ड</option>
+              <option value="MSME नोंदणी">MSME नोंदणी</option>
+              <option value="शॉप ॲक्ट">शॉप ॲक्ट</option>
+              <option value="BOCW कामगार कल्याण मंडळ">BOCW कामगार कल्याण मंडळ</option>
+              <option value="इतर">इतर</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-mr>संदेश</label><label data-en>Message</label>
+            <textarea name="message" id="formMessage" placeholder="आपला संदेश लिहा..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%" data-mr>WhatsApp वर पाठवा</button>
+          <button type="submit" class="btn-primary" style="width:100%" data-en>Send on WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<button class="admin-launch" type="button" onclick="openAdmin()">⚙ Admin / व्यवस्थापन</button>
+<div class="admin-panel" id="adminPanel" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+  <div class="admin-box" style="max-height:90vh;overflow:auto">
+    <h2 id="adminTitle">Admin Panel / व्यवस्थापन</h2>
+    <div class="admin-note"><strong>पासवर्ड:</strong> MMS@Awez2026<br>
+      सर्व ग्राहकांना बदल दिसण्यासाठी Netlify → Site settings → Environment variables में <code>MMS_ADMIN_TOKEN</code> = <code>MMS@Awez2026</code> सेट करें।
+    </div>
+
+    <h3 style="margin-top:18px;color:#123b8a">① शुल्क / Rates (₹)</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div><label>PAN</label><input id="ratePan" type="text" value="200"></div>
+      <div><label>Aadhaar</label><input id="rateAadhaar" type="text" value="150"></div>
+      <div><label>Passport Photo</label><input id="ratePhoto" type="text" value="50"></div>
+      <div><label>Color Xerox</label><input id="rateXerox" type="text" value="10"></div>
+      <div><label>Shop Act</label><input id="rateShop" type="text" value="300+"></div>
+      <div><label>MSME</label><input id="rateMsme" type="text" value="200+"></div>
+      <div><label>ITR</label><input id="rateItr" type="text" value="500+"></div>
+      <div><label>GST</label><input id="rateGst" type="text" value="400+"></div>
+    </div>
+
+    <h3 style="margin-top:18px;color:#123b8a">② संपर्क / Contact</h3>
+    <label>Phone 1</label><input id="setPhone" type="text" value="8669083431">
+    <label>Phone 2</label><input id="setPhone2" type="text" value="9673797263">
+    <label>WhatsApp (with country code)</label><input id="setWa" type="text" value="918669083431">
+    <label>UPI ID</label><input id="setUpi" type="text" placeholder="name@upi">
+    <label>Notice (optional)</label><input id="setNotice" type="text" placeholder="आज छुट्टी / Special note">
+
+    <h3 style="margin-top:18px;color:#123b8a">③ समय / Hours</h3>
+    <label>मराठी</label><input id="setHours" type="text" value="सोम–शनि: सकाळी ९:०० – संध्या ७:०० | रविवार बंद">
+    <label>English</label><input id="setHoursEn" type="text" value="Mon–Sat: 9:00 AM – 7:00 PM | Sunday Closed">
+
+    <div class="admin-actions" style="margin-top:14px">
+      <button type="button" onclick="saveSettings()">सेटिंग सेव / Save Settings</button>
+      <button type="button" class="secondary" onclick="closeAdmin()">बंद / Close</button>
+    </div>
+
+    <hr style="margin:20px 0;border:none;border-top:1px solid #e2e8f0">
+    <h3 style="color:#123b8a">④ भरती / योजना अपडेट</h3>
+    <form id="newsForm">
+      <label for="newsTitle">शीर्षक / Title</label><input id="newsTitle" required maxlength="120" placeholder="उदा. नवीन भरती सूचना">
+      <label for="newsCategory">प्रकार / Category</label><select id="newsCategory"><option>भरती / Recruitment</option><option>शासकीय योजना / Government Scheme</option><option>सेवा सूचना / Service Notice</option></select>
+      <label for="newsDescription">माहिती / Description</label><textarea id="newsDescription" rows="3" required maxlength="500" placeholder="संक्षिप्त माहिती लिहा"></textarea>
+      <label for="newsUrl">अधिकृत लिंक / Official URL</label><input id="newsUrl" type="url" placeholder="https://...">
+      <label for="newsLastDate">अंतिम तारीख / Last date</label><input id="newsLastDate" type="date">
+      <div class="admin-actions"><button type="submit">अपडेट सेव / Save Update</button><button type="button" class="secondary" onclick="exportUpdates()">JSON Export</button></div>
+    </form>
+    <div id="adminStatus" role="status" style="margin-top:12px;color:#123b8a"></div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>महाराष्ट्र मल्टीसर्व्हिसेस</h3>
+      <p data-mr>सर्व शासकीय व डिजिटल सेवा एकाच ठिकाणी. फुलंब्री, औरंगाबाद.</p>
+      <p data-en>All Government & Digital Services at One Place. Phulambri, Aurangabad.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-mr>द्रुत लिंक</h4><h4 data-en>Quick Links</h4>
+      <a href="#home" data-mr>मुख्यपृष्ठ</a><a href="#home" data-en>Home</a>
+      <a href="#services" data-mr>सेवा</a><a href="#services" data-en>Services</a>
+      <a href="#contact" data-mr>संपर्क</a><a href="#contact" data-en>Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-mr>संपर्क</h4><h4 data-en>Contact</h4>
+      <p>📞 8669083431</p>
+      <p>📞 9673797263</p>
+      <p>✉️ mservices9673@gmail.com</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 महाराष्ट्र मल्टीसर्व्हिसेस. <span data-mr>सर्व हक्क राखीव.</span><span data-en>All Rights Reserved.</span>
+  </div>
+</footer>
+
+<!-- Floating Buttons -->
+<div class="float-btns">
+  <a href="https://wa.me/918669083431" target="_blank" rel="noopener" class="float-btn float-wa" title="WhatsApp">💬</a>
+  <a href="tel:8669083431" class="float-btn float-call call-btn" data-num="8669083431" title="Call 8669083431">📞</a>
+</div>
+
+<script>
+  const languages = ['mr', 'en'];
+  const languageLabels = {mr:'English', en:'मराठी'};
+  let currentLanguage = 'mr';
+  function setLanguage(lang) {
+    currentLanguage = lang;
+    document.body.classList.remove('en', 'hi');
+    if (lang === 'en') document.body.classList.add('en');
+    document.documentElement.lang = lang === 'mr' ? 'mr' : 'en';
+    document.getElementById('langBtn').textContent = languageLabels[lang];
+  }
+  function toggleLang() { setLanguage(languages[(languages.indexOf(currentLanguage)+1)%languages.length]); }
+  function toggleDark() {
+    document.body.classList.toggle('dark');
+    var on = document.body.classList.contains('dark');
+    document.getElementById('darkBtn').textContent = on ? '☀️' : '🌙';
+    try { localStorage.setItem('mms-dark', on ? '1' : '0'); } catch(e) {}
+  }
+  try { if (localStorage.getItem('mms-dark') === '1') { document.body.classList.add('dark'); document.getElementById('darkBtn').textContent = '☀️'; } } catch(e) {}
+
+  let serverUpdates = [];
+  const defaultUpdates = [{title:'भरती व शासकीय योजना अपडेट्स',category:'माहिती / Information',description:'नवीन भरती व योजनांसाठी अधिकृत सरकारी पोर्टल आणि अधिसूचना तपासा.',url:''}];
+  function readUpdates() { return serverUpdates.length ? serverUpdates : defaultUpdates; }
+  async function loadServerUpdates() {
+    try { const r = await fetch('/api/updates', {cache:'no-store'}); if (!r.ok) throw new Error('API unavailable'); const data = await r.json(); serverUpdates = Array.isArray(data.updates) ? data.updates : []; renderUpdates(); } catch (e) { renderUpdates(); }
+  }
+  function renderUpdates() {
+    const grid = document.getElementById('newsGrid'); if (!grid) return;
+    const items = readUpdates(); grid.innerHTML = '';
+    items.forEach(item => {
+      const card = document.createElement('article'); card.className = 'news-card reveal';
+      const pill = document.createElement('span'); pill.className='news-pill'; pill.textContent=item.category || 'Update';
+      const title = document.createElement('h3'); title.textContent=item.title || 'Update';
+      const desc = document.createElement('p'); desc.textContent=item.description || ''; card.append(pill,title,desc);
+      if (item.lastDate) { const date=document.createElement('p'); date.textContent=(currentLanguage==='mr'?'अंतिम तारीख: ':currentLanguage==='hi'?'अंतिम तिथि: ':'Last date: ')+item.lastDate; card.append(date); }
+      if (item.url && /^https:\/\//i.test(item.url)) { const link=document.createElement('a'); link.href=item.url; link.target='_blank'; link.rel='noopener noreferrer'; link.textContent=currentLanguage==='mr'?'अधिकृत लिंक उघडा':(currentLanguage==='hi'?'आधिकारिक लिंक खोलें':'Open official link'); card.append(link); }
+      grid.append(card);
+    });
+  }
+  const ADMIN_PASS = 'MMS@Awez2026';
+  function openAdmin() {
+    var p = prompt('Admin पासवर्ड टाका / Enter Admin Password:');
+    if (p !== ADMIN_PASS) { if (p !== null) alert('चुकीचा पासवर्ड / Wrong password'); return; }
+    document.getElementById('adminPanel').classList.add('open');
+    fillAdminFormFromSettings();
+  }
+  function closeAdmin() { document.getElementById('adminPanel').classList.remove('open'); }
+
+  function filterServices(q) {
+    q = (q || '').toLowerCase().trim();
+    document.querySelectorAll('.service-card').forEach(function(card) {
+      var t = (card.innerText || '').toLowerCase();
+      card.style.display = (!q || t.indexOf(q) !== -1) ? '' : 'none';
+    });
+  }
+
+  var currentSettings = null;
+  function fillAdminFormFromSettings() {
+    var s = currentSettings || {};
+    var r = s.rates || {};
+    document.getElementById('ratePan').value = r.pan || '200';
+    document.getElementById('rateAadhaar').value = r.aadhaar || '150';
+    document.getElementById('ratePhoto').value = r.passportPhoto || '50';
+    document.getElementById('rateXerox').value = r.colorXerox || '10';
+    document.getElementById('rateShop').value = r.shopAct || '300+';
+    document.getElementById('rateMsme').value = r.msme || '200+';
+    document.getElementById('rateItr').value = r.itr || '500+';
+    document.getElementById('rateGst').value = r.gst || '400+';
+    document.getElementById('setPhone').value = s.phone || '8669083431';
+    document.getElementById('setPhone2').value = s.phone2 || '9673797263';
+    document.getElementById('setWa').value = s.whatsapp || '918669083431';
+    document.getElementById('setUpi').value = s.upiId || '';
+    document.getElementById('setNotice').value = s.notice || '';
+    document.getElementById('setHours').value = s.hours || '';
+    document.getElementById('setHoursEn').value = s.hoursEn || '';
+  }
+
+  function collectSettingsFromForm() {
+    return {
+      phone: document.getElementById('setPhone').value.trim(),
+      phone2: document.getElementById('setPhone2').value.trim(),
+      whatsapp: document.getElementById('setWa').value.trim(),
+      upiId: document.getElementById('setUpi').value.trim(),
+      notice: document.getElementById('setNotice').value.trim(),
+      hours: document.getElementById('setHours').value.trim(),
+      hoursEn: document.getElementById('setHoursEn').value.trim(),
+      rates: {
+        pan: document.getElementById('ratePan').value.trim(),
+        aadhaar: document.getElementById('rateAadhaar').value.trim(),
+        passportPhoto: document.getElementById('ratePhoto').value.trim(),
+        colorXerox: document.getElementById('rateXerox').value.trim(),
+        shopAct: document.getElementById('rateShop').value.trim(),
+        msme: document.getElementById('rateMsme').value.trim(),
+        itr: document.getElementById('rateItr').value.trim(),
+        gst: document.getElementById('rateGst').value.trim()
+      }
+    };
+  }
+
+  function applySettings(s) {
+    if (!s) return;
+    currentSettings = s;
+    var map = { pan: 'pan', aadhaar: 'aadhaar', passportPhoto: 'passportPhoto', colorXerox: 'colorXerox', shopAct: 'shopAct', msme: 'msme', itr: 'itr', gst: 'gst' };
+    Object.keys(map).forEach(function(k) {
+      var card = document.querySelector('.price-card[data-rate="' + k + '"] .rate-val');
+      if (card && s.rates && s.rates[k]) card.textContent = s.rates[k];
+    });
+    if (s.notice) {
+      var n = document.getElementById('siteNotice');
+      if (n) { n.style.display = 'block'; n.textContent = s.notice; }
+    } else {
+      var n2 = document.getElementById('siteNotice');
+      if (n2) n2.style.display = 'none';
+    }
+    if (s.upiId) {
+      var box = document.getElementById('upiBox');
+      var disp = document.getElementById('upiDisplay');
+      if (box && disp) { box.style.display = 'block'; disp.textContent = s.upiId; }
+    }
+    document.querySelectorAll('.hours-banner [data-mr]').forEach(function(el) { if (s.hours) el.textContent = '⏰ ' + s.hours; });
+    document.querySelectorAll('.hours-banner [data-en]').forEach(function(el) { if (s.hoursEn) el.textContent = '⏰ ' + s.hoursEn; });
+  }
+
+  async function saveSettings() {
+    var s = collectSettingsFromForm();
+    s.updatedAt = new Date().toISOString();
+    applySettings(s);
+    try { localStorage.setItem('mms-settings', JSON.stringify(s)); } catch (e) {}
+    var status = document.getElementById('adminStatus');
+    // Auto use same admin password as server token
+    var token = ADMIN_PASS;
+    try {
+      var r = await fetch('/api/settings', { method: 'POST', headers: { 'content-type': 'application/json', 'authorization': 'Bearer ' + token }, body: JSON.stringify(s) });
+      if (!r.ok) throw new Error(r.status === 401 ? 'Token गलत — Netlify में MMS_ADMIN_TOKEN = MMS@Awez2026 सेट करें' : r.status === 503 ? 'Netlify पर MMS_ADMIN_TOKEN सेट नहीं है' : 'सेव फेल (' + r.status + ')');
+      status.textContent = '✅ सेव हो गया — refresh के बाद भी रहेगा';
+    } catch (err) {
+      status.textContent = '⚠️ ' + err.message + ' | इस ब्राउज़र में सेव है। सर्वर सेव के लिए Environment variable सेट करें।';
+    }
+  }
+
+  async function loadSettings() {
+    var local = null;
+    try {
+      var raw = localStorage.getItem('mms-settings');
+      if (raw) local = JSON.parse(raw);
+    } catch (e) {}
+
+    var server = null;
+    try {
+      var r = await fetch('/api/settings', { cache: 'no-store' });
+      if (r.ok) {
+        var data = await r.json();
+        if (data && data.settings) server = data.settings;
+      }
+    } catch (e) {}
+
+    // Prefer whichever was updated more recently; always keep local if server has no updatedAt
+    if (local && server && server.updatedAt && local.updatedAt) {
+      applySettings(new Date(local.updatedAt) >= new Date(server.updatedAt) ? local : server);
+    } else if (local && local.rates) {
+      applySettings(local);
+    } else if (server) {
+      applySettings(server);
+    }
+  }
+  loadSettings();
+  document.getElementById('newsForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const token = prompt('Netlify Site Environment Variables मध्ये सेट केलेला MMS_ADMIN_TOKEN टाका:'); if (!token) return;
+    const item={title:document.getElementById('newsTitle').value.trim(),category:document.getElementById('newsCategory').value,description:document.getElementById('newsDescription').value.trim(),url:document.getElementById('newsUrl').value.trim(),lastDate:document.getElementById('newsLastDate').value};
+    try { const r=await fetch('/api/admin-update',{method:'POST',headers:{'content-type':'application/json','authorization':'Bearer '+token},body:JSON.stringify(item)}); if (!r.ok) throw new Error(r.status===401?'Token चुकीचा आहे.':r.status===503?'Netlify वर MMS_ADMIN_TOKEN सेट केलेला नाही.':'अपडेट जतन करता आले नाही ('+r.status+').'); await loadServerUpdates(); document.getElementById('adminStatus').textContent='अपडेट सर्व्हरवर जतन झाले.'; this.reset(); } catch(err) { document.getElementById('adminStatus').textContent=err.message+' इंटरनेट आणि Netlify deploy तपासा.'; }
+  });
+  function exportUpdates() { const blob=new Blob([JSON.stringify(readUpdates(),null,2)],{type:'application/json'}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='mms-updates.json'; a.click(); URL.revokeObjectURL(url); }
+  setLanguage('mr'); renderUpdates(); loadServerUpdates();
+
+  function toggleDocs(card) {
+    // Close others
+    document.querySelectorAll('.service-card.active').forEach(c => {
+      if (c !== card) c.classList.remove('active');
+    });
+    card.classList.toggle('active');
+  }
+
+  // Call buttons - open dialer with number filled
+  document.querySelectorAll('.call-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var num = btn.getAttribute('data-num') || '8669083431';
+      // Android intent first (opens dialer with number typed)
+      var isAndroid = /Android/i.test(navigator.userAgent);
+      if (isAndroid) {
+        window.location.href = 'intent://' + num + '#Intent;scheme=tel;action=android.intent.action.DIAL;end';
+        setTimeout(function() {
+          window.location.href = 'tel:' + num;
+        }, 500);
+      } else {
+        window.location.href = 'tel:' + num;
+      }
+    });
+  });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('formName').value.trim();
+    const phone = document.getElementById('formPhone').value.trim();
+    const service = document.getElementById('formService').value || 'इतर';
+    const message = document.getElementById('formMessage').value.trim();
+    const text = encodeURIComponent(
+      'नमस्कार! Maharashtra MultiServices\n\n' +
+      'नाव: ' + name + '\n' +
+      'मोबाईल: ' + phone + '\n' +
+      'सेवा: ' + service + '\n' +
+      'संदेश: ' + (message || '-')
+    );
+    window.open('https://wa.me/918669083431?text=' + text, '_blank');
+    e.target.reset();
+  }
+
+  // Close mobile menu on link click
+  document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', () => {
+      document.getElementById('nav').classList.remove('open');
+    });
+  });
+
+  // Photo Slider
+  let currentSlide = 0;
+  const track = document.getElementById('sliderTrack');
+  const dotsContainer = document.getElementById('sliderDots');
+  const totalSlides = track ? track.children.length : 0;
+
+  if (track && dotsContainer && totalSlides > 0) {
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+      if (i === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function goToSlide(n) {
+    if (!track || totalSlides < 1) return;
+    currentSlide = n;
+    track.style.transform = 'translateX(-' + (currentSlide * 100) + '%)';
+    document.querySelectorAll('#sliderDots button').forEach((d, i) => {
+      d.classList.toggle('active', i === currentSlide);
+    });
+  }
+
+  function changeSlide(dir) {
+    if (totalSlides < 1) return;
+    currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+    goToSlide(currentSlide);
+  }
+
+  // Auto slide every 3.5 seconds
+  if (totalSlides > 1) setInterval(() => changeSlide(1), 3500);
+  // Small reveal motion; content remains visible when observer is unavailable.
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('reveal'); revealObserver.unobserve(entry.target); } }), {threshold:.08});
+    document.querySelectorAll('.service-card, .news-card, .about-image').forEach(el => revealObserver.observe(el));
+  }
+</script>
+</body>
+</html>
