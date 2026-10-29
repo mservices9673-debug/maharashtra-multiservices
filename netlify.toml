@@ -1,0 +1,30 @@
+[build]
+  publish = "maharashtra-multiservices"
+  functions = "maharashtra-multiservices/netlify/functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[redirects]]
+  from = "/api/updates"
+  to = "/.netlify/functions/updates"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin-update"
+  to = "/.netlify/functions/admin-update"
+  status = 200
+
+[[redirects]]
+  from = "/api/settings"
+  to = "/.netlify/functions/settings"
+  status = 200
